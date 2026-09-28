@@ -1,0 +1,6 @@
+{
+  "name": "Petualangan Si Penyu: Sahabat Bumi",
+  "description": "Buku cerita digital interaktif dan sistem desain ramah anak kelas 4 SD tentang pemilahan sampah dan 3R.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

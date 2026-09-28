@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Baloo 2', cursive, sans-serif;
+  --font-body: 'Nunito', sans-serif;
+  --color-brand-green: #4CAF7A;
+  --color-brand-green-dark: #388E3C;
+  --color-brand-blue: #4FC3F7;
+  --color-brand-blue-dark: #0288D1;
+  --color-brand-yellow: #FFD54F;
+  --color-brand-yellow-dark: #FFA000;
+  --color-brand-orange: #FF9F68;
+  --color-brand-orange-dark: #F4511E;
+  --color-brand-success: #66BB6A;
+  --color-brand-cream: #FFF9EC;
+  --color-brand-navy: #1F2A44;
+}
+
+:root {
+  --font-scale: 1;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #1F2A44;
+  background-color: #FFF9EC;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: 'Baloo 2', cursive, sans-serif;
+}
+
+/* 3D Pressable button styles conforming to user requirements */
+.btn-3d {
+  position: relative;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn-3d:hover {
+  transform: translateY(-2px);
+}
+
+.btn-3d:active {
+  transform: translateY(2px);
+}
+
+/* Custom wave animation */
+@keyframes waveMotion {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-25px); }
+  100% { transform: translateX(0); }
+}
+
+.animate-wave {
+  animation: waveMotion 6s ease-in-out infinite;
+}
+
+@keyframes gentleFloat {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(3deg); }
+}
+
+.animate-float {
+  animation: gentleFloat 4s ease-in-out infinite;
+}
+
+@keyframes turtleSwim {
+  0%, 100% { transform: translateY(0px) rotate(-1deg); }
+  50% { transform: translateY(-6px) rotate(2deg); }
+}
+
+.animate-swim {
+  animation: turtleSwim 3s ease-in-out infinite;
+}
